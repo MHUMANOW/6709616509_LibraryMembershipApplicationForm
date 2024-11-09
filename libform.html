@@ -25,6 +25,7 @@
                 
                     <input type="radio" id="other" name="gender" value="other">
                     <label for="other">อื่นๆ</label><br><br>
+                </div>
 
             <label for="student_id">รหัสนักศึกษา <span>*</span></label>
             <input type="text" id="student_id" name="student_id" pattern="[0-9]{10}" required placeholder="กรอกรหัสนักศึกษา 10 หลัก"><br><br>
@@ -48,12 +49,44 @@
                     <option value="citu">วิทยาลัยนวัตกรรม</option>
                     <option value="arts">คณะศิลปศาสตร์</option>
                     <option value="jc">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                </select><br><br>
                 
             <label for="email">อีเมล <span>*</span></label>
             <input type="email" id="email" name="email" required placeholder="กรอกที่อยู่อีเมล"><br><br>
 
             <label for="dob">วันเดือนปีเกิด <span>*</span></label>
             <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>ประเภทของหนังสือที่สนใจ</label><br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="fiction" name="book_type" value="fiction">
+                <label for="fiction">นิยาย</label>
+            
+                <input type="checkbox" id="fantasy" name="book_type" value="fantasy">
+                <label for="fantasy">แฟนตาซี</label>
+            
+                <input type="checkbox" id="science" name="book_type" value="science">
+                <label for="science">วิทยาศาสตร์</label>
+            
+                <input type="checkbox" id="history" name="book_type" value="history">
+                <label for="history">ประวัติศาสตร์</label>
+
+                <input type="checkbox" id="suspense" name="book_type" value="suspense">
+                <label for="suspense">สืบสวน</label>
+            </div>
+
+                <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่?</label><br>
+                    <div class="radio-group">
+                        <input type="radio" id="subscribe_yes" name="newsletter" value="yes" required>
+                        <label for="subscribe_yes">ใช่</label>
+                    
+                        <input type="radio" id="subscribe_no" name="newsletter" value="no">
+                        <label for="subscribe_no">ไม่ใช่</label>
+                    </div>
+
+                <button type="submit">send form</button>
+                <button type="reset">clear form</button>
+        </form>
     </div>
 </body>
 </html>
