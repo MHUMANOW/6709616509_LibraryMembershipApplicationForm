@@ -15,7 +15,20 @@
             <label for="name_en">ชื่อ - นามสกุล (ภาษาอังกฤษ) <span>*</span></label>
             <input type="text" id="name_en" name="name_en" required placeholder="กรุณากรอกชื่อ-นามสกุลภาษาอังกฤษ"><br><br>
 
-            
+            <label>เพศ <span>*</span></label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">อื่นๆ</label><br><br>
+
+                    <label for="student_id">รหัสนักศึกษา <span>*</span></label>
+                    <input type="text" id="student_id" name="student_id" pattern="[0-9]{10}" required placeholder="กรอกรหัสนักศึกษา 10 หลัก"><br><br>
+                </div>
         </form>
     </div>
 </body>
